@@ -109,6 +109,15 @@ body {
 .orange-circle {
 	height: 6rem;
 	width: 6rem;
-	background-color: red;
 	border-radius: 50%;
+}
+
+.red-circle {
+	background-color: #eb001b;
+}
+
+.orange-circle {
+	background-color: #ff5f00;
+	margin-left: -2rem;
+	opacity: 0.8;
 }
