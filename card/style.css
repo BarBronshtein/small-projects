@@ -17,6 +17,11 @@ html {
 	place-items: center;
 }
 
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
 .container {
 	width: 100%;
 	height: 100vh;
@@ -27,7 +32,6 @@ html {
 .card-wrapper {
 	width: 50rem;
 	height: 70rem;
-	background-color: #ccc;
 	padding: 0 10rem;
 }
 
@@ -57,9 +61,7 @@ html {
 	color: #fff;
 }
 .card-top-text h1 {
-	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: 0.1rem;
 	margin-bottom: 1rem;
 }
 .shoe-1 {
@@ -77,8 +79,6 @@ html {
 
 .card-bottom h1 {
 	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
 	color: #333;
 	margin-bottom: 0.6rem;
 }
@@ -94,6 +94,73 @@ html {
 	border-radius: 0.3rem;
 	font-size: 0.9rem;
 	font-weight: bold;
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
+}
+
+.card-bottom h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0.6rem;
+}
+
+.stars {
+	margin-bottom: 3rem;
+}
+
+.stars i:last-child {
+	opacity: 0.1;
+}
+
+.size {
+	margin-bottom: 3rem;
+}
+
+.size h4 {
+	font-size: 1.2rem;
+	margin-bottom: 1.3rem;
+}
+
+.sizes {
+	display: flex;
+}
+
+.sizes span {
+	cursor: pointer;
+	font-size: 1.3rem;
+	margin-right: 2.5rem;
+}
+
+.sizes span:nth-child(3) {
+	width: 2rem;
+	height: 2rem;
+	background-color: #25d393;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.color h4 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.colors {
+	display: flex;
+}
+
+.color-1,
+.color-2 {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.color-1 {
+	background: #1c477a;
+	margin-right: 1.5rem;
+	box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+}
+
+.color-2 {
+	background: #c02244;
+	box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
 }
