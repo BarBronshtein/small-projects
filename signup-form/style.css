@@ -96,7 +96,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 10% 0;
+	padding: 6rem 0;
 	transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
