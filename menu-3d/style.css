@@ -44,6 +44,22 @@ html {
 	transform: rotateY(-70deg) rotateX(20deg) translate(-50rem, -15rem)
 		translateZ(-50rem);
 }
+.menu:hover .menu-item:nth-child(2) {
+	transform: rotateY(-70deg) rotateX(20deg) translate(-20rem, -5rem)
+		translateZ(-20rem);
+}
+.menu:hover .menu-item:nth-child(3) {
+	transform: rotateX(20deg);
+}
+
+.menu:hover .menu-item:nth-child(4) {
+	transform: rotateY(70deg) rotateX(20deg) translate(20rem, -5rem)
+		translateZ(-20rem);
+}
+.menu:hover .menu-item:nth-child(5) {
+	transform: rotateY(70deg) rotateX(20deg) translate(50rem, -15rem)
+		translateZ(-50rem);
+}
 
 .menu-item i {
 	font-size: 7rem;
