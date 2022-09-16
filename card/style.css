@@ -86,11 +86,11 @@ html {
 	position: absolute;
 	top: -10rem;
 	right: -45rem;
+	transition: transform 1s;
 }
 
 .container.change .shoe-2 {
 	transform: translate(-40rem) rotateZ(-45deg);
-	transition: transform 1s;
 }
 
 .card-bottom {
@@ -144,21 +144,23 @@ html {
 .sizes {
 	display: flex;
 }
-
 .sizes span {
 	cursor: pointer;
 	font-size: 1.3rem;
-	margin-right: 2.5rem;
+	margin-right: 3rem;
+	padding: 0.75rem 1rem;
+	transition: color 0.4s;
+	position: relative;
+	left: -0.75rem;
 }
 
 .sizes span.active {
-	width: 2rem;
-	height: 2rem;
 	background-color: #25d393;
 	color: #fff;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
+	padding-left: 1rem;
 }
 
 .color h4 {
