@@ -15,6 +15,7 @@ html {
 	display: flex;
 	align-items: center;
 	background-color: #030a1b;
+	perspective: 40rem;
 }
 
 .menu {
@@ -22,6 +23,7 @@ html {
 	padding: 0 25rem;
 	display: flex;
 	justify-content: space-evenly;
+	transform-style: preserve-3d;
 }
 
 .menu-item {
@@ -34,6 +36,13 @@ html {
 	border-radius: 1rem;
 	cursor: pointer;
 	box-shadow: 0 0 2rem rgba(100, 100, 255, 0.4);
+	opacity: 0.6;
+	transition: all 2s;
+}
+
+.menu:hover .menu-item:nth-child(1) {
+	transform: rotateY(-70deg) rotateX(20deg) translate(-50rem, -15rem)
+		translateZ(-50rem);
 }
 
 .menu-item i {
