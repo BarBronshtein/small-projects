@@ -33,6 +33,7 @@ html {
 	width: 50rem;
 	height: 70rem;
 	padding: 0 10rem;
+	overflow: hidden;
 }
 
 .card {
@@ -50,8 +51,12 @@ html {
 	background-color: #f1ae04;
 	padding: 3rem;
 	border-radius: 2.5rem 2.5rem 0 0;
+	transition: background 0.5s;
 }
 
+.container.change .card-top {
+	background-color: #d32546;
+}
 .logo {
 	width: 8rem;
 	margin-bottom: 2rem;
@@ -69,6 +74,23 @@ html {
 	position: absolute;
 	top: -2.5rem;
 	right: -10rem;
+	transition: transform 1s;
+}
+
+.container.change .shoe-1 {
+	transform: translateX(-50rem) rotateZ(45deg);
+}
+
+.shoe-2 {
+	width: 33rem;
+	position: absolute;
+	top: -10rem;
+	right: -45rem;
+}
+
+.container.change .shoe-2 {
+	transform: translate(-40rem) rotateZ(-45deg);
+	transition: transform 1s;
 }
 
 .card-bottom {
@@ -129,12 +151,14 @@ html {
 	margin-right: 2.5rem;
 }
 
-.sizes span:nth-child(3) {
+.sizes span.active {
 	width: 2rem;
 	height: 2rem;
 	background-color: #25d393;
 	color: #fff;
 	border-radius: 50%;
+	display: grid;
+	place-items: center;
 }
 
 .color h4 {
@@ -163,4 +187,38 @@ html {
 .color-2 {
 	background: #c02244;
 	box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+}
+
+.price {
+	width: 16rem;
+	height: 4rem;
+	background: #1c477a;
+	color: #fff;
+	border-radius: 0.5rem;
+	position: absolute;
+	right: -1rem;
+	bottom: 3rem;
+	box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.5s;
+}
+
+.container.change .price {
+	background-color: #c02244;
+}
+
+.price span {
+	font-size: 2rem;
+}
+
+.price span:first-child {
+	font-weight: 300;
+	margin-right: 1rem;
+	text-transform: uppercase;
+}
+
+.price span:last-child {
+	font-weight: bold;
 }
