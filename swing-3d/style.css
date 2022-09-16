@@ -30,7 +30,8 @@ html {
 	);
 	justify-content: center;
 	align-items: center;
-	/* perspective: 150rem; */
+	perspective: 150rem;
+	overflow: hidden;
 }
 
 .swing {
@@ -41,6 +42,11 @@ html {
 	transform-style: preserve-3d;
 	position: absolute;
 	top: 50%;
+	transform-origin: top;
+}
+
+.swing-1 {
+	animation: swingAnim 20s infinite ease-in-out;
 }
 
 @keyframes swingAnim {
