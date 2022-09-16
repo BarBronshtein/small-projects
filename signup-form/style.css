@@ -93,10 +93,10 @@ body {
 	top: 0;
 	left: 0;
 	display: flex;
+	padding: 2% 0;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 6rem 0;
 	transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
