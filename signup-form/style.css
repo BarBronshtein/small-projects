@@ -32,15 +32,22 @@ body {
 	border-radius: 3px;
 	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 	position: relative;
+	overflow: hidden;
 }
 
 .primary-bg {
 	background: var(--primary-color);
-	width: 40%;
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 10;
+	transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .primary-bg {
+	width: 40%;
 }
 
 .primary-bg .btn {
@@ -48,8 +55,8 @@ body {
 	top: 60%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 16rem;
-	height: 5rem;
+	width: 10rem;
+	height: 3rem;
 	background-color: transparent;
 	border: 0.1rem solid #fff;
 	border-radius: 3rem;
@@ -60,12 +67,18 @@ body {
 
 .banner {
 	position: absolute;
-	z-index: 5;
+	z-index: 15;
 	top: 25%;
-	left: 5%;
+	/* left: 5%; */
+	left: -30%;
 	text-align: center;
 	color: #fff;
 	width: 30%;
+	transition: left 0.6s;
+}
+
+.container.change .banner {
+	left: 5%;
 }
 
 .banner h1 {
@@ -78,12 +91,17 @@ body {
 	position: absolute;
 	height: 100%;
 	top: 0;
-	left: 40%;
+	left: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	padding: 10% 0;
+	transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .signup-form {
+	left: 40%;
 }
 
 .signup-form h1 {
