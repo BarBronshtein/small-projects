@@ -42,18 +42,23 @@ body {
 .heading span {
 	font-size: 4rem;
 	color: #efd81d;
+	transition: color 0.2s;
 }
 
 .btn {
 	width: 15rem;
 	height: 4rem;
-	background-color: #efd61dc9;
+	background-color: #efd81d;
+	text-align: center;
+	text-decoration: none;
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 0.1rem;
 	border: none;
 	margin-top: 3.5rem;
+	transition: background-color 0.3s;
+	line-height: 3;
 }
 
 .boxes {
@@ -75,6 +80,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.5s;
+	cursor: pointer;
 }
 
 @keyframes boxAnim {
@@ -125,7 +132,7 @@ body {
 .active.box div {
 	width: 16rem;
 	height: 16rem;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s 0.5s ease-in-out;
 }
 
 .box div {
